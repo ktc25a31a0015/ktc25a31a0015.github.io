@@ -21,9 +21,9 @@
     <button class="menu" id="menu" aria-label="メニュー">☰</button>
 
     <nav id="nav">
-      <a href="#about">ABOUT</a>
-      <a href="#skills">SKILLS</a>
       <a href="#works">WORKS</a>
+      <a href="#skills">SKILLS</a>
+      <a href="#about">ABOUT</a>
       <a href="#contact">CONTACT</a>
     </nav>
   </div>
@@ -41,44 +41,48 @@
       <span class="gradient">NEW WORLDS.</span>
     </h1>
 
-    <h2>YOUR NAME</h2>
+    <h2>尾﨑 友哉 / YUYA OZAKI</h2>
 
     <p>
       技術とアイデアで、新しいゲーム体験を創造する。<br>
       Unity / Unreal Engine
     </p>
 
-    <a href="#works" class="button">
-      EXPLORE MY WORKS →
-    </a>
   </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about">
+<!-- WORKS -->
+<section id="works">
   <div class="container">
-    <div class="section-label">01 / INTRODUCTION</div>
-    <h2 class="section-title">ABOUT ME</h2>
+    <div class="section-label">01 / PERSONAL PROJECTS</div>
+    <h2 class="section-title">SELECTED WORKS</h2>
 
-    <div class="about-grid">
-      <div class="profile-frame">
-        <img src="images/profile.jpg" alt="プロフィール写真">
-      </div>
+    <div class="works-grid">
 
-      <div class="panel about-text">
-        <h3>YOUR NAME</h3>
-        <span class="accent">GAME ENGINEER</span>
+      <article class="panel work-card">
+        <img src="images/game01.jpg" alt="ゲーム作品1">
 
-        <p>
-          ゲーム会社での開発経験を持つ
-          ゲームエンジニアです。
-        </p>
+        <div class="work-body">
+          <span class="work-category">ACTION GAME</span>
+          <h3>PROJECT 01</h3>
+          <p>3Dアクションゲームの個人制作。</p>
+          <span class="tag">Unity</span>
+          <span class="tag">C#</span>
+        </div>
+      </article>
 
-        <p>
-          Unity・Unreal Engineを使用した
-          ゲーム開発に取り組んでいます。
-        </p>
-      </div>
+      <article class="panel work-card">
+        <img src="images/game02.jpg" alt="ゲーム作品2">
+
+        <div class="work-body">
+          <span class="work-category">3D GAME</span>
+          <h3>PROJECT 02</h3>
+          <p>オリジナルゲームの個人制作。</p>
+          <span class="tag">Unreal Engine</span>
+          <span class="tag">C++</span>
+        </div>
+      </article>
+
     </div>
   </div>
 </section>
@@ -86,7 +90,7 @@
 <!-- SKILLS -->
 <section id="skills">
   <div class="container">
-    <div class="section-label">03 / TECHNOLOGY</div>
+    <div class="section-label">02 / TECHNOLOGY</div>
     <h2 class="section-title">SKILLS</h2>
 
     <div class="skill-grid">
@@ -121,38 +125,27 @@
   </div>
 </section>
 
-<!-- WORKS -->
-<section id="works">
+<!-- ABOUT -->
+<section id="about">
   <div class="container">
-    <div class="section-label">04 / PERSONAL PROJECTS</div>
-    <h2 class="section-title">SELECTED WORKS</h2>
+    <div class="section-label">03 / INTRODUCTION</div>
+    <h2 class="section-title">ABOUT ME</h2>
 
-    <div class="works-grid">
+    <div class="about-grid">
+      <div class="panel about-text">
+        <h3>尾﨑 友哉 / YUYA OZAKI</h3>
+        <span class="accent">GAME ENGINEER</span>
 
-      <article class="panel work-card">
-        <img src="images/game01.jpg" alt="ゲーム作品1">
+        <p>
+          ゲーム会社での開発経験を持つ
+          ゲームエンジニアです。
+        </p>
 
-        <div class="work-body">
-          <span class="work-category">ACTION GAME</span>
-          <h3>PROJECT 01</h3>
-          <p>3Dアクションゲームの個人制作。</p>
-          <span class="tag">Unity</span>
-          <span class="tag">C#</span>
-        </div>
-      </article>
-
-      <article class="panel work-card">
-        <img src="images/game02.jpg" alt="ゲーム作品2">
-
-        <div class="work-body">
-          <span class="work-category">3D GAME</span>
-          <h3>PROJECT 02</h3>
-          <p>オリジナルゲームの個人制作。</p>
-          <span class="tag">Unreal Engine</span>
-          <span class="tag">C++</span>
-        </div>
-      </article>
-
+        <p>
+          Unity・Unreal Engineを使用した
+          ゲーム開発に取り組んでいます。
+        </p>
+      </div>
     </div>
   </div>
 </section>
@@ -160,7 +153,7 @@
 <!-- DEVELOPMENT STYLE -->
 <section id="development">
   <div class="container">
-    <div class="section-label">05 / PHILOSOPHY</div>
+    <div class="section-label">04 / PHILOSOPHY</div>
     <h2 class="section-title">DEVELOPMENT STYLE</h2>
 
     <div class="dev-grid">
