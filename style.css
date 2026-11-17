@@ -254,41 +254,287 @@ section {
   font-size: 14px;
 }
 
-/* =================================
-   CAREER
-================================= */
+/* =====================================
+   EDUCATION & EXPERIENCE
+===================================== */
 
-.timeline {
-  border-left: 1px solid #36516c;
-  margin-left: 10px;
-  padding-left: 30px;
+.experience-heading {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  margin-top: 65px;
+  margin-bottom: 30px;
 }
 
-.career-item {
+.experience-number {
+  font-size: 35px;
+  font-weight: bold;
+
+  color: var(--cyan);
+
+  text-shadow:
+    0 0 15px #45d9ff55;
+}
+
+.experience-heading h3 {
+  font-size: 18px;
+  letter-spacing: 2px;
+
+  margin: 0;
+}
+
+.experience-heading p {
+  font-size: 12px;
+  color: var(--muted);
+
+  margin: 0;
+}
+
+
+/* TIMELINE */
+
+.experience-timeline {
   position: relative;
-  margin-bottom: 35px;
+
+  margin-left: 15px;
+  padding-left: 35px;
+
+  border-left: 1px solid #36516c;
 }
 
-.career-item::before {
+
+/* EXPERIENCE ITEM */
+
+.experience-item {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 170px 1fr;
+
+  gap: 25px;
+
+  padding-bottom: 45px;
+}
+
+
+/* TIMELINE POINT */
+
+.experience-item::before {
   content: "";
+
   position: absolute;
 
-  width: 11px;
-  height: 11px;
+  width: 12px;
+  height: 12px;
+
+  left: -42px;
+  top: 7px;
 
   border-radius: 50%;
+
   background: var(--cyan);
 
-  left: -36px;
-  top: 9px;
-
-  box-shadow: 0 0 15px var(--cyan);
+  box-shadow:
+    0 0 10px var(--cyan),
+    0 0 25px #45d9ff66;
 }
 
-.date {
+
+/* DATE */
+
+.experience-date {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 2px;
+}
+
+.experience-date span {
   color: var(--cyan);
-  font-size: 12px;
+
+  font-size: 13px;
+  font-weight: bold;
+
+  letter-spacing: 1px;
 }
+
+.experience-date small {
+  margin-top: 5px;
+
+  color: var(--muted);
+  font-size: 10px;
+
+  letter-spacing: 1px;
+}
+
+
+/* CONTENT CARD */
+
+.experience-content {
+  background: var(--panel);
+
+  border: 1px solid var(--line);
+  border-radius: 10px;
+
+  padding: 25px;
+
+  transition: 0.3s;
+}
+
+.experience-content:hover {
+  border-color: var(--cyan);
+
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 10px 30px #0004,
+    0 0 20px #45d9ff12;
+}
+
+
+/* CATEGORY */
+
+.experience-category {
+  display: inline-block;
+
+  color: var(--cyan);
+
+  font-size: 10px;
+  letter-spacing: 2px;
+
+  margin-bottom: 10px;
+}
+
+
+/* TITLE */
+
+.experience-content h3 {
+  font-size: 20px;
+
+  margin: 0 0 8px;
+}
+
+.experience-content h4 {
+  color: #d5e2f5;
+
+  font-size: 13px;
+  font-weight: normal;
+
+  margin: 0 0 15px;
+}
+
+
+/* DESCRIPTION */
+
+.experience-content p {
+  color: var(--muted);
+
+  font-size: 13px;
+  line-height: 2;
+
+  margin: 0 0 18px;
+}
+
+
+/* TAGS */
+
+.experience-tags {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 8px;
+}
+
+.experience-tags span {
+  display: inline-block;
+
+  border: 1px solid #354c68;
+
+  background: #142139;
+
+  color: #c8d5e8;
+
+  padding: 4px 12px;
+
+  border-radius: 3px;
+
+  font-size: 11px;
+}
+
+
+/* LINK */
+
+.experience-link {
+  display: inline-block;
+
+  margin-top: 20px;
+
+  color: var(--cyan);
+
+  font-size: 11px;
+  letter-spacing: 2px;
+
+  transition: 0.3s;
+}
+
+.experience-link:hover {
+  letter-spacing: 3px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 760px) {
+
+  .experience-heading {
+    margin-top: 45px;
+    gap: 12px;
+  }
+
+  .experience-number {
+    font-size: 28px;
+  }
+
+  .experience-heading h3 {
+    font-size: 15px;
+  }
+
+  .experience-timeline {
+    margin-left: 7px;
+    padding-left: 25px;
+  }
+
+  .experience-item {
+    grid-template-columns: 1fr;
+    gap: 12px;
+
+    padding-bottom: 35px;
+  }
+
+  .experience-item::before {
+    left: -32px;
+  }
+
+  .experience-date {
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .experience-date small {
+    margin-top: 0;
+  }
+
+  .experience-content {
+    padding: 20px;
+  }
+
+  .experience-content h3 {
+    font-size: 17px;
+  }
+}
+
 
 /* =================================
    SKILLS
